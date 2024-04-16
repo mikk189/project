@@ -1,11 +1,4 @@
-body {
-  font-family: Poppins;
-}
-.container {
-  max-width: 1225px;
-  margin: 0 auto;
-  padding: 10px 0;
-}
+
 a {
   text-decoration: none;
 }
@@ -32,6 +25,21 @@ ul,
 li {
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: Poppins;
+  background: #1e252b;
+}
+button{
+  cursor: pointer;
+}
+a{
+  cursor: pointer;
+}
+.container {
+  max-width: 1225px;
+  margin: 0 auto;
+  padding: 10px 0;
 }
 /* HEADER */
 header {
@@ -66,6 +74,10 @@ header {
 }
 .nav-link:hover {
   color: white;
+  transition: 1s;
+}
+.nav-link:not(:hover) {
+  transition: 1s;
 }
 .button-log {
   color: rgba(255, 255, 255, 0.78);
@@ -80,6 +92,10 @@ header {
 .button-log:hover {
   background: #ff6e30;
   color: #fdf5ff;
+  transition: 1s;
+}
+.button-log:not(:hover) {
+  transition: 1s;
 }
 .button-reg {
   color: rgba(255, 255, 255, 0.78);
@@ -94,6 +110,10 @@ header {
 .button-reg:hover {
   background: #ff6e30;
   color: #fdf5ff;
+  transition: 1s;
+}
+.button-reg:not(:hover) {
+  transition: 1s;
 }
 /* SECTION HERO */
 .hero {
@@ -154,13 +174,17 @@ header {
   width: 130px;
   height: 48px;
   border: none;
+  background-color: #ff6e30;
   border-radius: 8px;
-  background: #ff6e30;
   margin-right: 11px;
 }
 .hero-button:hover {
   color: #ff6e30;
   background-color: #fdf5ff;
+  transition: 1s;
+}
+.hero-button:not(:hover) {
+  transition: 1s;
 }
 .hero-img {
   margin-left: 15px;
@@ -177,12 +201,101 @@ header {
   gap: 30px;
 }
 /* SECTION POPULAR */
+
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  row-gap: 100px;
+  margin-top: 100px;
+}
+.popular-items {
+  width: 392px;
+  height: 294px;
+  border-radius: 15px;
+  background: #1e252b;
+}
+.popular-img {
+  margin-top: 34px;
+  margin-left: 33px;
+}
+.popular-items:hover {
+  border-radius: 15px;
+  background: rgba(40, 48, 54, 0.6);
+  background-image: radial-gradient(
+    ellipse at top right,
+    rgba(254, 135, 84, 0.307),
+    rgba(255, 255, 255, 0) 20%
+  );
+  backdrop-filter: blur(100px);
+  transform: translateY(-20px);
+  transition: 1s;
+}
+.popular-items:not(:hover) {
+  transition: 1s;
+}
+.popular-button {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+  font-weight: 600;
+  width: 118px;
+  height: 48px;
+  background: #1e252b;
+  border: none;
+  border-radius: 8px;
+  margin-left: 130px;
+}
+.popular-button:hover {
+  background: #ff6e30;
+  color: #fdf5ff;
+  transition: 1s;
+}
+.popular-button:not(:hover) {
+  transition: 1s;
+}
+.popular-container {
+  display: flex;
+}
+.container-img {
+  margin-right: 25px;
+}
+.container-text {
+  margin-top: 33px;
+}
+.popular-title-text {
+  margin-top: 3px;
+}
+.popular-list-text {
+  margin-bottom: 37px;
+  margin-top: 37px;
+  margin-left: 33px;
+}
+.heart {
+  height: 30px;
+  width: 30px;
+  margin-right: 25px;
+  margin-left: 40px;
+}
+.heart:hover {
+  border-radius: 8px;
+  background: #283036;
+  box-shadow: 0px 30px 50px -3px rgba(18, 18, 18, 0.15);
+}
+.heart:not(:hover) {
+  transition: 1s;
+}
+.folder{
+  height: 30px;
+  width: 30px;
+}
 .popular-title-main {
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
   font-size: 48px;
   font-weight: 500;
   line-height: 130%; /* 62.4px */
+  margin-top: 200px;
 }
 .popular-text {
   color: rgba(255, 255, 255, 0.55);
@@ -190,6 +303,7 @@ header {
   font-size: 18px;
   font-weight: 500;
   line-height: 30px; /* 166.667% */
+  margin-top: 25px;
 }
 .popular-title {
   color: rgba(255, 255, 255, 0.78);
@@ -214,15 +328,56 @@ header {
   font-weight: 600;
 }
 .popular-under-button {
+  display: block;
+  margin: 0 auto;
+  width: 184px;
+  height: 64px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #1e252b;
   color: #ff6e30;
+  font-family: Poppins;
   font-size: 20px;
   font-weight: 500;
+  margin-top: 100px;
+}
+.popular-under-button:hover {
+  background: #ff6e30;
+  color: #fdf5ff;
+  transition: 1s;
+}
+.popular-under-button:not(:hover) {
+  transition: 1s;
 }
 /* SECTION BRAND */
+.brand-container {
+  width: 1224px;
+  height: 253px;
+  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background: rgba(44, 53, 61, 0.2);
+  backdrop-filter: blur(25px);
+  background-image: radial-gradient(
+    circle at top left,
+    rgba(255, 126, 57, 0.329),
+    rgba(44, 53, 61, 0.2) 8%
+  );
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 220px;
+}
 .brand-title {
   color: rgba(255, 255, 255, 0.8);
   font-size: 24px;
   font-weight: 500;
+  text-align: center;
+  margin-top: 55px;
+}
+.brand-list {
+  display: flex;
+  justify-content: center;
+  gap: 107px;
+  margin-top: 56px;
 }
 /* SECTION NEWCOMER */
 .newcomer-title {

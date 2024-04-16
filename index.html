@@ -7,6 +7,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,10 +28,10 @@
         <!-- NAVIGATION -->
         <nav class="header-nav">
           <!-- LOGO -->
-          <div class="logo">
+          <a href="#" class="logo">
             <img src="imgs/header/logo.svg" alt="" class="header-logo" />
             <h3 class="header-text-logo">antools.</h3>
-          </div>
+          </a>
           <!-- MAIN-NAVIGATION -->
           <ul class="header-list">
             <li class="header-items">
@@ -85,7 +89,7 @@
         </div>
       </section>
       <!-- SECTION POPULAR -->
-      <section class="popular">
+      <section class="popular container">
         <h3 class="popular-title-main">Most Popular Tools</h3>
         <p class="popular-text">
           Tools for the best Designers and Developers most popularly used in the
@@ -93,73 +97,161 @@
         </p>
         <ul class="popular-list">
           <li class="popular-items">
-            <img src="imgs/popular/figma.png" alt="" class="popular-img" />
-            <h4 class="popular-title">FIGMA</h4>
-            <p class="popular-title-text">Free</p>
+            <div class="popular-container">
+              <div class="container-img">
+                <img src="imgs/popular/figma.png" alt="" class="popular-img" />
+              </div>
+              <div class="container-text">
+                <h4 class="popular-title">FIGMA</h4>
+                <p class="popular-title-text">Free</p>
+              </div>
+            </div>
             <p class="popular-list-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <img src="imgs/popular/flat-color-icons_like.png" alt="" />
-            <img src="imgs/popular/eva_folder-add-outline.png" alt="" />
-            <button type="button" class="popular-button">Visit</button>
-          </li>
-          <li class="popular-items">
-            <img src="imgs/popular/sketch.png" alt="" class="popular-img" />
-            <h4 class="popular-title">Sketch</h4>
-            <p class="popular-title-text">Trial & Paid</p>
-            <p class="popular-list-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img src="imgs/popular/flat-color-icons_like.png" alt="" />
-            <img src="imgs/popular/eva_folder-add-outline.png" alt="" />
-            <button type="button" class="popular-button">Visit</button>
-          </li>
-          <li class="popular-items">
             <img
-              src="imgs/popular/visual-studio-code.png"
+              src="imgs/popular/flat-color-icons_like.png"
               alt=""
-              class="popular-img"
+              class="heart"
             />
-            <h4 class="popular-title">Visual Studio Code</h4>
-            <p class="popular-title-text">Free</p>
-            <p class="popular-list-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <img src="imgs/popular/flat-color-icons_like.png" alt="" />
-            <img src="imgs/popular/eva_folder-add-outline.png" alt="" />
+            <img
+              src="imgs/popular/eva_folder-add-outline.png"
+              alt=""
+              class="folder"
+            />
             <button type="button" class="popular-button">Visit</button>
           </li>
           <li class="popular-items">
-            <img src="imgs/popular/notion.png" alt="" class="popular-img" />
-            <h4 class="popular-title">Notion</h4>
-            <p class="popular-title-text">Trial & Paid</p>
+            <div class="popular-container">
+              <div class="container-img">
+                <img src="imgs/popular/sketch.png" alt="" class="popular-img" />
+              </div>
+              <div class="container-text">
+                <h4 class="popular-title">Sketch</h4>
+                <p class="popular-title-text">Trial & Paid</p>
+              </div>
+            </div>
             <p class="popular-list-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <img src="imgs/popular/flat-color-icons_like.png" alt="" />
-            <img src="imgs/popular/eva_folder-add-outline.png" alt="" />
+            <img
+              src="imgs/popular/flat-color-icons_like.png"
+              alt=""
+              class="heart"
+            />
+            <img
+              src="imgs/popular/eva_folder-add-outline.png"
+              alt=""
+              class="folder"
+            />
             <button type="button" class="popular-button">Visit</button>
           </li>
           <li class="popular-items">
-            <img src="imgs/popular/slack.png" alt="" class="popular-img" />
-            <h4 class="popular-title">Slack</h4>
-            <p class="popular-title-text">Trial & Paid</p>
+            <div class="popular-container">
+              <div class="container-img">
+                <img
+                  src="imgs/popular/visual-studio-code.png"
+                  alt=""
+                  class="popular-img"
+                />
+              </div>
+              <div class="container-text">
+                <h4 class="popular-title">Visual Studio Code</h4>
+                <p class="popular-title-text">Free</p>
+              </div>
+            </div>
             <p class="popular-list-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <img src="imgs/popular/flat-color-icons_like.png" alt="" />
-            <img src="imgs/popular/eva_folder-add-outline.png" alt="" />
+            <img
+              src="imgs/popular/flat-color-icons_like.png"
+              alt=""
+              class="heart"
+            />
+            <img
+              src="imgs/popular/eva_folder-add-outline.png"
+              alt=""
+              class="folder"
+            />
             <button type="button" class="popular-button">Visit</button>
           </li>
           <li class="popular-items">
-            <img src="imgs/popular/invision.png" alt="" class="popular-img" />
-            <h4 class="popular-title">Invision</h4>
-            <p class="popular-title-text">Trial & Paid</p>
+            <div class="popular-container">
+              <div class="container-img">
+                <img src="imgs/popular/notion.png" alt="" class="popular-img" />
+              </div>
+              <div class="container-text">
+                <h4 class="popular-title">Notion</h4>
+                <p class="popular-title-text">Trial & Paid</p>
+              </div>
+            </div>
             <p class="popular-list-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <img src="imgs/popular/flat-color-icons_like.png" alt="" />
-            <img src="imgs/popular/eva_folder-add-outline.png" alt="" />
+            <img
+              src="imgs/popular/flat-color-icons_like.png"
+              alt=""
+              class="heart"
+            />
+            <img
+              src="imgs/popular/eva_folder-add-outline.png"
+              alt=""
+              class="folder"
+            />
+            <button type="button" class="popular-button">Visit</button>
+          </li>
+          <li class="popular-items">
+            <div class="popular-container">
+              <div class="container-img">
+                <img src="imgs/popular/slack.png" alt="" class="popular-img" />
+              </div>
+              <div class="container-text">
+                <h4 class="popular-title">Slack</h4>
+                <p class="popular-title-text">Trial & Paid</p>
+              </div>
+            </div>
+            <p class="popular-list-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <img
+              src="imgs/popular/flat-color-icons_like.png"
+              alt=""
+              class="heart"
+            />
+            <img
+              src="imgs/popular/eva_folder-add-outline.png"
+              alt=""
+              class="folder"
+            />
+            <button type="button" class="popular-button">Visit</button>
+          </li>
+          <li class="popular-items">
+            <div class="popular-container">
+              <div class="container-img">
+                <img
+                  src="imgs/popular/invision.png"
+                  alt=""
+                  class="popular-img"
+                />
+              </div>
+              <div class="container-text">
+                <h4 class="popular-title">Invision</h4>
+                <p class="popular-title-text">Trial & Paid</p>
+              </div>
+            </div>
+            <p class="popular-list-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <img
+              src="imgs/popular/flat-color-icons_like.png"
+              alt=""
+              class="heart"
+            />
+            <img
+              src="imgs/popular/eva_folder-add-outline.png"
+              alt=""
+              class="folder"
+            />
             <button type="button" class="popular-button">Visit</button>
           </li>
         </ul>
@@ -167,21 +259,23 @@
       </section>
       <!-- SECTION BRAND -->
       <section class="brand">
-        <h4 class="brand-title">Trusted more than 150+ brand</h4>
-        <ul class="brand-list">
-          <li class="brand-items">
-            <img src="imgs/brand/microsoft.png" alt="" class="brand-img" />
-          </li>
-          <li class="brand-items">
-            <img src="imgs/brand/google.png" alt="" class="brand-img" />
-          </li>
-          <li class="brand-items">
-            <img src="imgs/brand/slack.png" alt="" class="brand-img" />
-          </li>
-          <li class="brand-items">
-            <img src="imgs/brand/wordpress.png" alt="" class="brand-img" />
-          </li>
-        </ul>
+        <div class="brand-container">
+          <h4 class="brand-title">Trusted more than 150+ brand</h4>
+          <ul class="brand-list">
+            <li class="brand-items">
+              <img src="imgs/brand/microsoft.png" alt="" class="brand-img" />
+            </li>
+            <li class="brand-items">
+              <img src="imgs/brand/google.png" alt="" class="brand-img" />
+            </li>
+            <li class="brand-items">
+              <img src="imgs/brand/slack.png" alt="" class="brand-img" />
+            </li>
+            <li class="brand-items">
+              <img src="imgs/brand/wordpress.png" alt="" class="brand-img" />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- SECTION NEWCOMER -->
       <section class="newcomer">
@@ -277,9 +371,11 @@
     <!-- FOOTER -->
     <footer>
       <div>
+        <a href="" class="footer-logo">
         <img src="imgs/footer/logo.png" alt="" class="footer-logo-img" />
         <h3 class="footer-logo">antools.</h3>
         <h4 class="footer-title-logo">Copyright 2021. Antools</h4>
+        </a>
         <p class="footer-text">
           Antool is a web collection of information on paid or free Design and
           Development tools

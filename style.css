@@ -271,8 +271,8 @@ header {
   margin-left: 33px;
 }
 .heart {
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
   margin-right: 25px;
   margin-left: 40px;
 }
@@ -280,13 +280,14 @@ header {
   border-radius: 8px;
   background: #283036;
   box-shadow: 0px 30px 50px -3px rgba(18, 18, 18, 0.15);
+  background-image: url(imgs/popular/red.png);
 }
 .heart:not(:hover) {
   transition: 1s;
 }
 .folder {
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
 }
 .popular-title-main {
   color: rgba(255, 255, 255, 0.9);
@@ -382,7 +383,7 @@ header {
 .newcomer {
   display: flex;
 }
-.newcomer-left-container{
+.newcomer-left-container {
   margin-right: 150px;
 }
 .newcomer-title {
@@ -439,6 +440,9 @@ header {
   );
   backdrop-filter: blur(100px);
   transform: translateY(-20px);
+  transition: 1s;
+}
+.newcomer-items:not(:hover) {
   transition: 1s;
 }
 .newcomer-list-title {
@@ -508,11 +512,22 @@ header {
 }
 .heart1 {
   margin-left: 20px;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 }
 .folder1 {
-  height: 30px;
+  width: 28px;
+  height: 28px;
+}
+.heart1:hover {
+  border-radius: 8px;
+  background: #283036;
+  box-shadow: 0px 30px 50px -3px rgba(18, 18, 18, 0.15);
+  background-image: url(imgs/popular/red.png);
+  transition: 1s;
+}
+.heart1:not(:hover) {
+  transition: 1s;
 }
 /* SECTION MAN */
 .man-name {
@@ -528,11 +543,48 @@ header {
 }
 .man-text {
   color: rgba(255, 255, 255, 0.78);
-  font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px; /* 214.286% */
   letter-spacing: 0.21px;
+  width: 393px;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.section-man {
+  display: flex;
+  margin-top: 200px;
+}
+.img-container {
+  margin-left: 170px;
+}
+.man-text-container {
+  background: rgba(40, 48, 54, 0.8);
+  border-radius: 8px;
+  padding: 16px 23px;
+  width: 265px;
+  bottom: 150px;
+  left: 200px;
+  position: relative;
+  align-items: center;
+  text-align: start;
+}
+.arrows {
+  position: absolute;
+  top: 3700px;
+}
+.arrow-left {
+  margin-right: 1097px;
+  cursor: pointer;
+}
+.arrow-right {
+  cursor: pointer;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 /* SECTION JOIN */
 .join-title {
@@ -541,26 +593,82 @@ header {
   font-size: 48px;
   font-weight: 500;
   line-height: 130%; /* 62.4px */
+  margin-top: 250px;
 }
 .join-text {
-  color: rgba(255, 255, 255, 0.55);
+  width: 427px;
   text-align: center;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 500;
   line-height: 30px; /* 166.667% */
+  margin-top: 27px;
 }
+.join-wrapper-container {
+  display: flex;
+  justify-content: center;
+}
+.join-wrapper {
+  width: 500px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  background: #283036;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
 .join-input {
+  height: 21px;
+  width: 195px;
   color: rgba(255, 255, 255, 0.38);
+  font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
+  outline: none;
+  background: #283036;
+  border: none;
+  margin-left: 20px;
 }
 .join-button {
-  color: #fff;
+  color: #fdf5ff;
   font-size: 16px;
   font-weight: 600;
+  width: 130px;
+  height: 48px;
+  border: none;
+  background-color: #ff6e30;
+  border-radius: 8px;
+  margin-right: 11px;
 }
+.join-button:hover {
+  color: #ff6e30;
+  background-color: #fdf5ff;
+  transition: 1s;
+}
+.join-button:not(:hover) {
+  transition: 1s;
+}
+
 /* FOOTER */
+.footer {
+  display: flex;
+  margin-top: 240px;
+  border-top: rgba(255, 255, 255, 0.15) solid;
+  padding-top:73px ;
+}
+.footer-logo-container{
+  margin-left: 108px;
+  margin-right: 156px;
+}
 .footer-logo {
+  width: 120px;
+  display: flex;
+}
+.footer-logo-title {
   color: rgba(255, 255, 255, 0.9);
   font-size: 22px;
   font-weight: 600;
@@ -570,19 +678,39 @@ header {
   font-size: 16px;
   font-weight: 500;
 }
+.footer-logo-img {
+  margin-right: 12px;
+}
 .footer-text {
   color: rgba(255, 255, 255, 0.55);
   font-size: 14px;
   font-weight: 400;
   line-height: 25px; /* 178.571% */
+  width: 260px;
+  margin-top: 21px;
+  margin-bottom: 98px;
+}
+.footer-title-logo {
+  margin-top: 25px;
 }
 .footer-title {
   color: rgba(255, 255, 255, 0.9);
   font-size: 20px;
   font-weight: 500;
 }
+.footer-nav {
+  display: flex;
+}
 .footer-nav-link {
   color: rgba(255, 255, 255, 0.55);
   font-size: 16px;
   font-weight: 500;
+  display: block;
+  margin-top: 10px;
+}
+.contact {
+  margin-right: 115px;
+}
+.categories {
+  margin-right: 115px;
 }

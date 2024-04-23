@@ -552,6 +552,23 @@ header {
   margin-top: 100px;
   margin-left: 100px;
 }
+.paws {
+  position: absolute ;
+  font-family: Lora;
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: linear-gradient(
+    189deg,
+    rgba(252, 252, 252, 0) 20.34%,
+    rgba(255, 255, 255, 0.5) 155.72%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: rotate(19.166deg);
+}
 .section-man {
   display: flex;
   margin-top: 200px;
@@ -560,7 +577,6 @@ header {
   margin-left: 170px;
 }
 .man-text-container {
-  background: rgba(40, 48, 54, 0.8);
   border-radius: 8px;
   padding: 16px 23px;
   width: 265px;
@@ -569,7 +585,10 @@ header {
   position: relative;
   align-items: center;
   text-align: start;
+  backdrop-filter: blur(25px);
+  background: rgba(40, 48, 54, 0.2);
 }
+
 .arrows {
   position: absolute;
   top: 3700px;
@@ -658,9 +677,9 @@ header {
   display: flex;
   margin-top: 240px;
   border-top: rgba(255, 255, 255, 0.15) solid;
-  padding-top:73px ;
+  padding-top: 73px;
 }
-.footer-logo-container{
+.footer-logo-container {
   margin-left: 108px;
   margin-right: 156px;
 }
@@ -708,11 +727,11 @@ header {
   display: block;
   margin-top: 10px;
 }
-.footer-nav-link:hover{
+.footer-nav-link:hover {
   color: white;
   transition: 0.5s;
 }
-.footer-nav-link:not(:hover){
+.footer-nav-link:not(:hover) {
   transition: 0.5s;
 }
 .contact {

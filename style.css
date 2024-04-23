@@ -72,7 +72,7 @@ header {
   font-weight: 500;
 }
 .nav-link:hover {
-  color: white;
+  color: #ff6e30;
   transition: 1s;
 }
 .nav-link:not(:hover) {
@@ -707,6 +707,13 @@ header {
   font-weight: 500;
   display: block;
   margin-top: 10px;
+}
+.footer-nav-link:hover{
+  color: white;
+  transition: 0.5s;
+}
+.footer-nav-link:not(:hover){
+  transition: 0.5s;
 }
 .contact {
   margin-right: 115px;
